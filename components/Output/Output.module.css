@@ -1,0 +1,7 @@
+.output {
+  display: flex;
+  align-items: center;
+  border: 1px solid #c1c1c1;
+  height: 150px;
+  overflow: scroll;
+}
