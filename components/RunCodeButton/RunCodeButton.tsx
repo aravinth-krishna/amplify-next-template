@@ -2,12 +2,12 @@ import styles from "./RunCodeButton.module.css";
 
 interface CodeExecutorProps {
   code: string;
-  onOutput: (output: string) => void;
+  onOutput: () => void;
 }
 
 const RunCodeButton = ({ code, onOutput }: CodeExecutorProps) => {
   return (
-    <button className={styles.runCodeButton}>
+    <button className={styles.runCodeButton} onClick={onOutput}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

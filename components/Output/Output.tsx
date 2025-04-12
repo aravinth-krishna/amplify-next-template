@@ -7,7 +7,7 @@ interface OutputProps {
 const Output = ({ output }: OutputProps) => {
   return (
     <div className={styles.output}>
-      <pre>{output}</pre>
+      <pre>{output || "Try running your code..."}</pre>
     </div>
   );
 };
